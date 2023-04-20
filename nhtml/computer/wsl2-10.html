@@ -41,9 +41,9 @@
 　<img src="wsl2-10-7.jpg" width="40%"><br>
 　あとは、普通に使えば良いので、ここでは試しにneofetchを入れてみる。<br>
 通常は<br>
-　　sudo apt update && sudo apt install neofetch <br>
+　　<i><b>sudo apt update && sudo apt install neofetch</i></b> <br>
 で、インストールができるが、ディスク領域を圧迫したくないときは、<br>
-　　sudo apt update && sudo apt install neofetch <font color="FF5500">--no-install-recommends </font><br>
+　　<i><b>sudo apt update && sudo apt install neofetch <font color="FF5500">--no-install-recommends </font></i></b><br>
 で、推奨パッケージのインストールをケチるという手がある。<br>
 これでneofetchを実行すると、<br>
 　<img src="wsl2-10-8.jpg" width="40%"><br>
@@ -54,14 +54,17 @@
 <h4>・Fedoraのインストール</h4>
 　最新の技術を試したい人や、RedHatなどを使い慣れたベテランであれば、Fedoraをインストールしたいかもしれない。しかし、Debian、OpenSUSE、KaliLinuxなどと異なり、Fedora(Remix)はMS Storeでは有料となっている。<br>
 　然し、<a href="https://github.com/WhitewaterFoundry/Fedora-Remix-for-WSL"  target="_blank">開発元のGithub</a>の<a href="https://github.com/WhitewaterFoundry/Fedora-Remix-for-WSL#isnt-fedora-free"  target="_blank">Isn't fedora free?</a>を見ると一応無料版も公開されていることが分かる。ここからダウンロードできるmsixbundleファイルをインストールすれば、fedoraの導入も可能であるということだ。
+<h4>・追記(2023/04/20)</h4>
+　Windows 10のより最新のバージョン(22H2以降?)やWindows 11ではより簡単にインスト－ルできる模様。<br>
+　あと、<i><b>wsl --update</i></b>を実行しないとGUIのLinuxアプリケーションが動かない。但し、Win10の場合は22H2かそのぐらいのバージョンでないとエラーが出るので参考までに。
 <h4>・参考</h4>
-<a href="https://learn.microsoft.com/ja-jp/windows/wsl/install-manual" target="_blank">以前のバージョンの WSL の手動インストール手順 </a><br>
-<a href="https://qiita.com/Uchitaso/items/6e0a7859e87bb8bdb527" target="_blank">wsl2でよく使う、windowsとlinux間のファイル移動やコマンド実行。</a><br>
-<a href="https://github.com/WhitewaterFoundry/Fedora-Remix-for-WSL" target="_blank">WhitewaterFoundry/Fedora-Remix-for-WSL</a><br>
-<a href="https://qiita.com/betarium/items/640534d190e4f78b2b4e" target="_blank">WSLでFedoraを起動する</a><br>
+<a href="https://learn.microsoft.com/ja-jp/windows/wsl/install-manual" target="_blank">以前のバージョンの WSL の手動インストール手順 --- Microsoft</a><br>
+<a href="https://qiita.com/Uchitaso/items/6e0a7859e87bb8bdb527" target="_blank">wsl2でよく使う、windowsとlinux間のファイル移動やコマンド実行。--- Uchitaso (Qitta)</a><br>
+<a href="https://github.com/WhitewaterFoundry/Fedora-Remix-for-WSL" target="_blank">WhitewaterFoundry/Fedora-Remix-for-WSL ---WhiteWaterFundory (Github)</a><br>
+<a href="https://qiita.com/betarium/items/640534d190e4f78b2b4e" target="_blank">WSLでFedoraを起動する --- betarium (Qitta)</a><br>
 <div class="koushin">
 記事作成日:2023/03/25<br>
-情報最終電送日:2023/03/025<br>
+情報最終電送日:2023/04/20<br>
 執筆：虚時間fλ
 <script src="https://utteranc.es/client.js"
         repo="denjikidensanki/denjikidensanki.github.io"
