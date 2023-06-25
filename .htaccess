@@ -1,0 +1,8 @@
+SetEnvIf User-Agent "archive.org_bot" shutout_ua
+SetEnvIf User-Agent "ia_archiver" shutout_ua
+
+order allow,deny
+
+allow from all
+
+deny from env=shutout_ua
