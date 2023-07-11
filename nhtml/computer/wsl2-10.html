@@ -17,6 +17,8 @@
 <h4>・WSL2について</h4>
 　Windows上でLinuxを動かすとき、大抵の場合VirtualBoxやVMWare、またはWindowsのHyper-Vなどの仮想マシン上に目的のOSをインストールすることになるが、"Windows Subsystem for Linux 2"(WSL2)という機能でWindows上で簡易的にLinuxを動かすことができる。<br>
 　VirtualBoxの時などとは異なり、共有フォルダーの設定をしなくてもゲストOSとホストOS間でファイルのやり取りが行えるので非常に助かる場合がある。今回はWindows10上のWSL2の導入方法とUbuntu、Fedoraのインストール法を解説する。(Windows11は手持ちの電算機にはないので今回は解説しない。)<br>
+</div>
+<div class="honbun">
 <h4>・WSL2のインストール</h4>
 　Windows10においてWSL2をインストールするときのwindowsのバージョンは、x64の中央処理装置では1903以降、ARM64は2004以降であることが必要になる。32bitの電算機では残念ながらインストールは(少なくとも正攻法では)できない。<br>
 　適宜な更新が済んだら、まずwindowsの機能を拡張する。<br>
@@ -34,6 +36,8 @@
 を入力し、実行する。<br>
 　<img src="wsl2-10-5-1.jpg" width="50%"><br>
 以上でWSL2の導入は完了するので、この先はOSをインストールする。
+</div>
+<div class="honbun">
 <h4>・Ubuntuのインストール</h4>
 ①MS Storeを開き、Ubuntuを検索しインストールする。ここでは、Windows Terminalというコマンドプロント・Powerchell・Ubuntuを一括管理できるターミナルも入れる。<br>
 　<img src="wsl2-10-6.png" width="40%"><br>
@@ -51,17 +55,24 @@
 　因みに、windows上のファイルにアクセスしたい場合は、例えばCドライブのときは、<br>
 　　cd /mnt/c/<br>
 でアクセス出来る。<br>
+</div>
+<div class="honbun">
 <h4>・Fedoraのインストール</h4>
 　最新の技術を試したい人や、RedHatなどを使い慣れたベテランであれば、Fedoraをインストールしたいかもしれない。しかし、Debian、OpenSUSE、KaliLinuxなどと異なり、Fedora(Remix)はMS Storeでは有料となっている。<br>
 　然し、<a href="https://github.com/WhitewaterFoundry/Fedora-Remix-for-WSL"  target="_blank">開発元のGithub</a>の<a href="https://github.com/WhitewaterFoundry/Fedora-Remix-for-WSL#isnt-fedora-free"  target="_blank">Isn't fedora free?</a>を見ると一応無料版も公開されていることが分かる。ここからダウンロードできるmsixbundleファイルをインストールすれば、fedoraの導入も可能であるということだ。
+</div>
+<div class="honbun">
 <h4>・追記(2023/04/20)</h4>
 　Windows 10のより最新のバージョン(22H2以降?)やWindows 11ではより簡単にインスト－ルできる模様。<br>
 　あと、<i><b>wsl --update</i></b>を実行しないとGUIのLinuxアプリケーションが動かない。但し、Win10の場合は22H2かそのぐらいのバージョンでないとエラーが出るので参考までに。
+</div>
+<div class="honbun">
 <h4>・参考</h4>
 <a href="https://learn.microsoft.com/ja-jp/windows/wsl/install-manual" target="_blank">以前のバージョンの WSL の手動インストール手順 --- Microsoft</a><br>
 <a href="https://qiita.com/Uchitaso/items/6e0a7859e87bb8bdb527" target="_blank">wsl2でよく使う、windowsとlinux間のファイル移動やコマンド実行。--- Uchitaso (Qitta)</a><br>
 <a href="https://github.com/WhitewaterFoundry/Fedora-Remix-for-WSL" target="_blank">WhitewaterFoundry/Fedora-Remix-for-WSL ---WhiteWaterFundory (Github)</a><br>
 <a href="https://qiita.com/betarium/items/640534d190e4f78b2b4e" target="_blank">WSLでFedoraを起動する --- betarium (Qitta)</a><br>
+</div>
 <div class="koushin">
 記事作成日:2023/03/25<br>
 情報最終電送日:2023/04/20<br>
