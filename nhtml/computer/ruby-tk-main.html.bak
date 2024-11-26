@@ -1,0 +1,64 @@
+﻿<html>
+  <head>
+    <title>Ruby Tkのインストール方法</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body style="background-color: #000066;">
+    <h1 style="text-align: center;"><i><span style="color: #00cccc;">Ruby Tk
+          の設定方法</span></i></h1>
+    <h2><span style="color: white;">・Ruby Tkとは</span></h2>
+    <p><span style="color: white;">　GUIアプリケーションを作るときに使うスクリプト言語のひとつにTk/Tclがある。Tk
+        /Tclは通常Pythonという言語に実装する形で使われるが、同様なことを日本で作られたプログラミング言語- Ruby にRuby
+        Tkとして実装することで実現することができる。<br>
+      </span></p>
+    <h2><span style="color: white;">・Fedora41へのインストール</span></h2>
+    <p><span style="color: white;">　ここでは、Ruby Tk のFedora41へのインストール方法を紹介する。</span></p>
+    <p><span style="color: white;">　(gemを使う方法、使わない方法があるが、ここではgemを使う方法を記述する。)<br>
+      </span></p>
+    <p><span style="color: white;">　まず前提として、Fedoraでプログラミングなどを行いたい場合は、</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">sudo dnf group install development-tools </span><br>
+        </i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><i>　</i>で、
+        開発者向けのツールを一括でインストールするべきである。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　次に、Rubyをイ
+        ンストールする。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">sudo dnf install ruby ruby-devel</span></i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><span style="color: #ff6600;">　<span
+            style="color: white;">ここで、-develがつくパッケージは、debian系では-develの代わりに-devがつ
+            くパッケージになっていることが多い。</span><br>
+        </span></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><span style="color: #ff6600;">　<span
+            style="color: white;">インストールが終わったらとりあえず、</span></span></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><span style="color: #ff6600;"><span
+            style="color: white;">　<i><span style="color: #ff6600;">gem update</span></i></span></span></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><span style="color: #ff6600;"><span
+            style="color: white;">　を実行し、Rubyがインストールされていることを確認できるだろう。</span></span><br>
+      </span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　さて、ここで
+        gem install tk を実行するとエラーになることがわかる。これはruby tk がtkのパッケージを必要としているからであり、先に、</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">sudo dnf install libX11-devel tk-devel
+            tcl-devel</span></i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　で、Tkに必要な
+        パッケージを入れる。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　これが終わったらい
+        よいよ、</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">gem install tk</span></i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　で、Ruby
+        Tkのセットアップを完了できる。</span></p>
+    <h2 style=" background-color: #000066;"><span style="color: white;">・おまけ<br>
+      </span></h2>
+    <p style="background-color: #000066;"><span style="color: white;">　GUIで画像処理を
+        したくなる時、Rubyのrmagickを使うことが多い。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　参考にまでインス
+        トール方法を列記しておく。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">sudo dnf install ImageMagick-devel gcc-c++</span></i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><i><span style="color: #ff6600;">　gem
+            install rmagick</span></i><br>
+      </span></p>
+  </body>
+</html>
