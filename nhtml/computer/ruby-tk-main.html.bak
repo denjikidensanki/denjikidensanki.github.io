@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Ruby Tkのインストール方法</title>
+  </head>
+  <body style="background-color: #000066;">
+    <h1 style="text-align: center;"><i><span style="color: #00cccc;">Ruby Tk
+          のインストール方法</span></i></h1>
+    <h2><span style="color: white;">・Ruby Tkとは</span></h2>
+    <p><span style="color: white;">　GUIアプリケーションを作るときに使うスクリプト言語のひとつにTk/Tclがある。Tk
+        /Tclは通常Pythonという言語に実装する形で使われるが、同様なことを日本で作られたプログラミング言語- Ruby にRuby
+        Tkとして実装することで実現することができる。<br>
+      </span></p>
+    <h2><span style="color: white;">・Fedora41へのインストール</span></h2>
+    <p><span style="color: white;">　ここでは、Ruby Tk のFedora41へのインストール方法を紹介する。</span></p>
+    <p><span style="color: white;">　(gemを使う方法、使わない方法があるが、ここではgemを使う方法を記述する。)</span></p>
+    <p><span style="color: white;">　まず前提として、Fedoraでプログラミングなどを行いたい場合は、</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">sudo dnf group install development-tools </span><br>
+        </i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><i>　</i>で、
+        開発者向けのツールを一括でインストールするべきである。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　次に、Rubyをイ
+        ンストールする。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">sudo dnf install ruby ruby-devel</span></i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><span style="color: #ff6600;">　<span
+            style="color: white;">ここで、-develがつくパッケージは、debian系では-develの代わりに-devがつ
+            くパッケージになっていることが多い。</span><br>
+        </span></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><span style="color: #ff6600;">　<span
+            style="color: white;">インストールが終わったらとりあえず、</span></span></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><span style="color: #ff6600;"><span
+            style="color: white;">　<i><span style="color: #ff6600;">gem update</span></i></span></span></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><span style="color: #ff6600;"><span
+            style="color: white;">　を実行し、Rubyがインストールされていることを確認できるだろう。</span></span><br>
+      </span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　さて、ここで
+        gem install tk を実行するとエラーになることがわかる。これはruby tk がtkのパッケージを必要としているからであり、先に、</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">sudo dnf install libX11-devel tk-devel
+            tcl-devel</span></i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　で、Tkに必要な
+        パッケージを入れる。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　これが終わったらい
+        よいよ、</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">gem install tk</span></i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　で、Ruby
+        Tkのセットアップを完了できる。</span></p>
+    <h2 style=" background-color: #000066;"><span style="color: white;">・おまけ<br>
+      </span></h2>
+    <p style="background-color: #000066;"><span style="color: white;">　GUIで画像処理を
+        したくなる時、Rubyのrmagickを使うことが多い。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　参考にまでインス
+        トール方法を列記しておく。</span></p>
+    <p style="background-color: #000066;"><span style="color: white;">　<i><span
+            style="color: #ff6600;">sudo dnf install ImageMagick-devel gcc-c++</span></i></span></p>
+    <p style="background-color: #000066;"><span style="color: white;"><i><span style="color: #ff6600;">　gem
+            install rmagick</span></i></span></p>
+    <h2 style="  background-color: #000066;"><br>
+    </h2>
+    <h2><span style="color: white;">・(2024-11-29追記)何故Ubuntuでインストールしないのか</span></h2>
+    <p><span style="color: white;">　LinuxといえばDebianをベースとしたUbuntu系のOSが普及していて、
+        RedHat系のOSは個人利用としては見受けられなくなりつつある。</span></p>
+    <p><span style="color: white;"></span>　<span style="color: white;">ところで、
+        Ubuntu等OSでは通常のインストールにより最新版のRubyがインストールされない。</span></p>
+    <p><span style="color: white;">　2024/11/29時点で、Debian・Ubuntuのapt、Fedoraのdnfによ
+        りインストールされるRubyのバージョンは以下の通りである。</span></p>
+    <p><span style="color: white;"></span></p>
+    <table width="100%" border="1">
+      <tbody>
+        <tr>
+          <td><span style="color: white;">2024-11-29<br>
+            </span></td>
+          <td><span style="color: white;">Rubyの最新版は3.3.6<br>
+            </span></td>
+        </tr>
+        <tr>
+          <td style="width: 351.917px;"><span style="color: white;">Debian 12<br>
+            </span></td>
+          <td style="width: 350.083px;"><span style="color: white;">Ruby 3.1.x<br>
+            </span></td>
+        </tr>
+        <tr>
+          <td><span style="color: white;">Ubuntu 24.04.1 LTS<br>
+            </span></td>
+          <td><span style="color: white;">Ruby 3.2.2<br>
+            </span></td>
+        </tr>
+        <tr>
+          <td><span style="color: white;">Ubuntu 24.10<br>
+            </span></td>
+          <td><span style="color: white;">Ruby 3.3.x<br>
+            </span></td>
+        </tr>
+        <tr>
+          <td><span style="color: white;">Fedora 40<br>
+            </span></td>
+          <td><span style="color: white;">Ruby 3.3.6<br>
+            </span></td>
+        </tr>
+        <tr>
+          <td><span style="color: white;">Fedora 41<br>
+            </span></td>
+          <td><span style="color: white;">Ruby 3.3.6<br>
+            </span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><span style="color: white;">　このように、Ubuntuでも最新版ではRuby3.3系がインストールされるが、LTSでは
+        3.2のままで、その一方でFedoraでは最新のFedora41もひとつ前のバージョンのFedora40でも最新のRuby
+        3.3.6がインストールされる。</span></p>
+    <p><span style="color: white;">　また、aptでインストールすると管理者権限なしでrubyのgem(パッケージ)をインス
+        トールできないなどの不具合もある。<br>
+      </span></p>
+    <p><span style="color: white;">　勿論、Ubuntuでもaptを使わずにインストールすることによりRubyの最新版をインス
+        トールすることができるが、この際コンパイルなどをする必要性があり、時間等がかかってしまう。それぐらいならFedoraでインストールを行い時間を節
+        約するべきと個人的には考える。<br>
+      </span></p>
+    <p style="background-color: #000066; text-align: right;"><span style="color: white;"><span
+          style="color: #ff6600;"><span style="color: white;">執筆:虚時間fλ</span></span></span></p>
+    <p style="background-color: #000066; text-align: right;"><span style="color: white;"><span
+          style="color: #ff6600;"><span style="color: white;">情報最終更新日:2024/11/29</span></span></span></p>
+    <p style="background-color: #000066; text-align: right;"><span style="color: white;"><span
+          style="color: #ff6600;"><span style="color: white;">記事作成日:2024/11/26</span></span><br>
+      </span></p>
+  </body>
+</html>
