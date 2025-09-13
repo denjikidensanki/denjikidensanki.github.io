@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<head>
+<html lang="ja">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="../../css/css.css">
+
+    <meta name="author" content="imaginarytimeflambda">
+    <meta name="title" content="Firefox派生ブラウザーの紹介">
+    <meta name="description" content="Firefox派生ブラウザーの紹介">
+    <meta property="image" content="https://denjikidensanki.github.io/nimg/icon.jpg">
+    <meta property="url" content="https://denjikidensanki.github.io/nhtml/computer/ffbrowsers.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Firefox派生ブラウザーの紹介">
+    <meta name="twitter:description" content="Firefox派生ブラウザーの紹介">
+    <meta name="twitter:image" content="https://denjikidensanki.github.io/nimg/icon.jpg">
+
+    <meta property="og:url" content="https://denjikidensanki.github.io/nhtml/computer/ffbrowsers.html">
+    <meta property="og:title" content="Firefox派生ブラウザーの紹介">
+    <meta property="og:description" content="Firefox派生ブラウザーの紹介">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Github Pages">
+    <meta property="og:image" content="https://denjikidensanki.github.io/nimg/icon.jpg">
+</head>
+<body >
+<div class="base">
+<div class="hidari">
+	<iframe src="./../../nhtml/nmenu.html" width="100%" height="100%"></iframe>
+</div>
+<div class="migi">
+<h1>Firefox派生ブラウザーの紹介</h1>
+<div class="honbun">
+<h4>・ブラウザ</h4>
+<div class="honbun2">
+　ウェブページを表示させるためのブラウザ、何を使っているだろう。今こそはほとんどの人がChromeを使っているが、時代によってはIEを使う人が多かった時代、NetScapeと呼ばれるブラウザが主に使われていた時代、IEとChromeとFirefoxが同じ程度使われていた時代もある。最近MS Edgeを使う人が多くなっているが、OperaやVivaldiといったブラウザを使う人や、Macintosh系の端末を使う人にはSafariを使う人もいるだろう。<br><br>
+　
+</div>
+</div>
+<div class="honbun">
+<h4>・ブラウザの三分類</h4>
+<div class="honbun2">
+　このように種類が非常に多いブラウザは、おもに３つに分類することができる。<br>
+　分類をするために、そもそもブラウザとは何かということを考える。ブラウザはウェブページを表示することを可能にするアプリケーションだが、具体的に、HTML・CSSなどと行ったサイトの内容が書かれたファイルを読み取り、それに準じてウェブページを表示させることになる。HTMLやCSSファイルなどには、「どの文章・画像をどこに表示させるか」といった情報が書かれており、ブラウザはそれに応じてページを表示させることになるが、ファイルの内容を読み取り解釈(レンダリング)するためには「レンダリングエンジン」なるものが必要となる。<br>
+　現在、ブラウザに使われているレンダリングエンジンはChromeなどが利用しているBlink、Firefoxなどが利用しているGecko、Safariが利用しているWebkitの主に３つである。Safari派生のブラウザがないことを考えると、ほとんどのブラウザはChromiumかGeckoをレンダリングエンジンとして利用したもので、それぞれのレンダリングエンジンを搭載した標準のブラウザが「Chromium」、「Firefox」なので、Safariを除く他のブラウザはChromiumかFirefoxから派生したブラウザであるということになる。<br><br>
+
+(注)最近までは、MS EdgeはEdgeHTML、IEがTrident、OperaがPrestoというレンダリングエンジンを使用していたがいずれも開発が終了している。<br><br>
+</div>
+</div>
+
+<div class="honbun">
+<h4>・Firefox派生のブラウザ</h4>
+<div class="honbun2">
+　では実際にどのブラウザがChromium派生で、どのブラウザがFirefox派生なのか。<br>
+　StartCounterによると、2025年の8月の電算機におけるブラウザのシェアは、Google Chromeが63%、MS Edgeが21%、Firefoxが6.4%、Safariが5.7%、Braveが1.5%、Operaが1.0%となっている。<br>
+　ここまで列挙したブラウザの内、<b>FirefoxとSafariを除くすべてのブラウザーがChromium派生</b>なのである。他にもVivaldi、Cent Browserなどのブラウザも聞いたことがあるかもしれないが(聞いたことがあれば恐らく貴方はブラウザマニアだろう)、これらも現在(2024年)はすべてChromium派生のブラウザである。<br><br>
+
+　貴方は思ったかもしれない、「Firefox派生のブラウザがないではないか。」、と。<br>
+　そう、Firefox派生のブラウザは意外と知られていない。この記事では2025年現在、開発が継続されている少数派のFirefox派生のブラウザを紹介していこう。<br><br>
+
+</div>
+</div>
+
+<div class="honbun">
+<h4>・Waterfox</h4>
+<div class="honbun2">
+
+<img src="./img/waterfox.png" width="50%"><br><br>
+　<a href="https://www.waterfox.net/">Waterfox -- Fast and Private Web Browser</a><br><br>
+　Firefoxが「火狐」ならば、「水狐」が存在してもよいだろう。<br>
+　プライバシーに重点をおいたブラウザである。<br>
+　通常版とclassic版があり、classic版では今では未対応となった古いFirefoxのアドオン(拡張機能)をサポートしている。<br><br>
+
+　既定の検索エンジンはStartpage。因みに、waterfoxは<a href="search.waterfox.net">独自の検索エンジンも提供している</a>ので、一度使ってみると良いかもしれない。<br><br>
+
+</div>
+</div>
+
+<div class="honbun">
+<h4>・Icecat</h4>
+<div class="honbun2">
+<img src="./img/icecat-appearance.png" width="50%"><br><br>
+
+　<a href="https://www.gnu.org/software/icecat/">GNUzilla and IceCat - GNU Project</a><br><br>
+　火、水と来たら、次は土?金?いや、氷(ice)である。<br>
+　<a>以前の記事</a>でも紹介したように、FirefoxがGPLライセンスに準拠するように作られたブラウザIceweaselの開発を継承して開発されているブラウザである。JavaScriptの実行を制限する拡張機能などが既定でインストールされており、プライバシーを重視したブラウザと言える。既定の検索エンジンはDuckDuckGo。<br><br>
+</div>
+</div>
+
+<div class="honbun">
+<h4>・Librewolf</h4>
+<div class="honbun2">
+<img src="./img/librewolf.png" width="50%"><br><br>
+　<a href="https://librewolf.net/">LibreWolf</a><br><br>
+
+　火の狐、氷の猫(icecat)と来たら、次は狼か。<br>
+　プライバシーを重視したブラウザで、Firefoxと異なり、ホーム画面の広告ショートカットがなく、検索窓だけが表示される、あっさりとしたホーム画面となっている。<br>
+　既定の検索エンジンはDuckDuckGo。広告ブロッカーUBlockOriginが既定でインストールされている。<br><br>
+</div>
+</div>
+
+<div class="honbun">
+<h4>・TorBrowser</h4>
+<div class="honbun2">
+
+　<a href="https://www.torproject.org/">Tor Project -- Anonymity Online</a><br><br>
+　知る人ぞ知る、ダークウェブにアクセスするためのブラウザ。<br>
+　サイトにアクセスするために３つのサーバーを経由するシステム、Torを利用し、通常のサイトでは開けない、末尾が.onionのサイトを開くことができる。<br><br>
+　一部の国では利用が禁止されているので注意すること。<br><br>
+</div>
+</div>
+
+<div class="honbun">
+<h4>・Floorp</h4>
+<div class="honbun2">
+<img src="./img/floorp.png" width="50%"><br><br>
+　<a href="https://floorp.app">Floorp</a><br><br>
+　色々な記事で紹介されているので、このサイトで深く紹介する必要はないだろう。<br>
+　日本国産のFirefox派生ブラウザ。学生が作ったと考えると非常に驚くだろう。<br>
+　「Firefox版Vivaldi」といえるほど充実したブラウザで、プライバシーを維持しながら高度なカスタマイズが可能となっている。<br><br>
+</div>
+</div>
+
+<div class="honbun">
+<h4>・FireDragon</h4>
+<div class="honbun2">
+<img src="./img/firedragon.png" width="50%"><br><br>
+
+　<a href="https://firedragon.garudalinux.org/">FireDragon</a><br><br>
+　厳密にはFloorp派生だが、FloorpがFirefox派生ということで紹介する。<br>
+　以前はLibrewolfブラウザから派生したこともあり、Floorpを派生としてLibrewolfのような高度なプライバシー性を維持するように作られている。<br>
+　既定の検索エンジンは、Garuda's SearX。Librewolfと同様に、広告ブロッカーUBlockOriginが既定でインストールされている。<br>
+</div>
+</div>
+
+<div class="honbun">
+<h4>・Midori</h4>
+<div class="honbun2">
+<img src="./img/midori.png" width="50%"><br><br>
+　<a href="https://astian.org/midori-browser/">Astian, Inc. Midori Browser light web browser</a><br><br>
+
+　昔ラズパイを使っていた人は、ブラウザの一つにMidoriがあったのを覚えているかもしれない。以前Midoriは、レンダリングエンジンとしてwebkitを採用していたが、2023年よりFloorpをベースとしたエディションを開発している。Floorp派生であることが明確に示されていない(2025年8月時点)との批判もある。<br>
+　既定の検索エンジンはAstian Go。
+</div>
+</div>
+
+<div class="honbun">
+<h4>・SeaMonkey</h4>
+<div class="honbun2">
+<img src="./img/seamonkey.png" width="50%"><br><br>
+　<a href="https://www.seamonkey-project.org/">SeaMonkey</a><br><br>
+　ウィンドウの上部に広がる大きめのアイコン。<br>
+　いつの時代のブラウザなのか、いや、2025年も開発が続くブラウザだ。<br>
+　古いアドオンをサポートし、Firefoxのバージョン60に相当するブラウザだが現在もメンテナンスが行われている。<br>
+　筆者が過去にメール専用として愛用していたブラウザ。<br><br>
+</div>
+</div>
+
+
+<div class="honbun">
+<h4>・Basilisk</h4>
+<div class="honbun2">
+<img src="./img/basilisk.png" width="50%"><br><br>
+　<a href="https://www.basilisk-browser.org/">Basilisk </a><br><br>
+
+　古いFirefoxから派生したブラウザ。<br>
+　使い勝手は古いfirefoxに近いが、最新のwebページも問題なく開ける。<br>
+　既定の検索エンジンはDuckDuckGo。
+</div>
+</div>
+
+<div class="honbun">
+<h4>・Serpent</h4>
+<div class="honbun2">
+　<a href="https://rtfreesoft.blogspot.com/">RT's Free Soft -- Weekly browser binaries </a><br><br>
+
+
+　このブラウザ、なんとwindowsXPでも使えます。<br>
+　先ほど紹介したBasiliskブラウザをwindowsXPで使えるように改造したもので、2025年現在も開発が続いている。<br>
+　世の中には「Win10がサポートを終了する、まずい!」と叫ぶ人もいれば、「まだwinXP、win2kを使い続けるぞ!」と粘る人もいる。<br>
+　貴方も棚の奥に眠っている古いパソコンに入れてみては如何だろうか。<br><br>
+
+</div>
+</div>
+
+<div class="honbun">
+<h4>・総括</h4>
+<div class="honbun2">
+　如何だろうか。冒頭で紹介した通り、約9割のユーザーがChromium派生のブラウザを使う中で、Firefox派生のブラウザー計10個紹介することができた。<br>
+　Firefox派生のブラウザには他にもPalemoonやr3dfoxといったものがあり、web上を探せばまだまだ見つけることができるかもしれない。また、強者であれば「Firefox派生のブラウザを自作」したくなる人も出てくるだろう。<br>
+　最後に、マイナーなブラウザの中には危険なものもあるかもしれないので、サイトで紹介されているかどうかに関わらず、是非一度ウィルスチェックなどを行ってから使うようにしたい。<br><br>
+
+</div>
+</div>
+
+
+
+<div class="honbun">
+<h4>・参考</h4>
+<div class="honbun2">
+<a href="https://wa3.i-3-i.info/word1357.html" target="_blank">レンダリングエンジン ---- わわわIT用語辞典</a><br>
+<a href="https://www.waterfox.net/blog/authors/alex-kontos/">Alex Kontos -- Waterfox</a><br>
+<a href="https://www.senninblog.com/185.htm" target="_blank">Windows XPで使えるブラウザー---- 仙人</a><br>
+<a href="https://linuxja.miraheze.org/wiki/Mozilla_Firefox/Floorp/Midori" target="_blank">Midori---- Linux Japan wiki(2025年9月13日閲覧)</a><br><br>
+
+但し、紹介した各ブラウザーの公式ページも参照した。(リンクは本文中にあり。)<br><br>
+
+以上、全て2025年9月13日に閲覧。<br><br>
+
+
+
+</div>
+</div>
+<div class="koushin">
+記事作成日:2024/09/13<br>
+情報最終更新日:2025/09/13<br>
+執筆：虚時間fλ
+</div>
+</div>
+</div>
+</div>
+</body>
